@@ -61,3 +61,43 @@ const Task1 = () => {
 }
 
 export default Task1
+
+// import React, { useState } from 'react'
+
+// const Task1 = () => {
+//     const [email,setEmail]= useState("")
+//     const [password,setPassword]= useState("")
+//     const [error,setError]=useState({})
+//     const [success,setSuccess]=useState("")
+
+//     const handleSubmit=(e)=>{
+//         e.preventDefault()
+//         let errorMsg = {}
+//         setSuccess("")
+//         if(!email){
+//             errorMsg.email="Email required"
+//         }else if(!password){
+//             errorMsg.password="password required"
+//         }else if(password.length<6){
+//             errorMsg.password='password must be atleast 6 character'
+//         }else{
+//             setSuccess('Login successfull')
+//         }
+//         setError(errorMsg)
+//     }
+
+//   return (
+//     <>
+//     <form onSubmit={handleSubmit}>
+//         <input type="text" name="email" placeholder='Enter email' value={email} onChange={(e)=>{setEmail(e.target.value)}} />
+//         {error && <p>{error.email}</p>}
+//         <input type="text" name="password" placeholder='Enter password' value={password} onChange={(e)=>{setPassword(e.target.value)}} />
+//         {error && <p>{error.password}</p>}
+//         <button type='submit'>Login</button>
+//         {success && <p>{success}</p>}
+//     </form>
+//     </>
+//   )
+// }
+
+// export default Task1
